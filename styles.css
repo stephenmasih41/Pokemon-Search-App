@@ -34,8 +34,8 @@ h1,h2{
 main{
   text-align: center;
   background-color: var(--primary-color-3);
-  height: 550px;
-  width: 800px;
+  height: 80vh;
+  width: 80vw;
 }
 
 main h3{
@@ -50,6 +50,9 @@ main h3{
 #hero input{
   height: 30px;
   width: 400px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
 }
 #hero > input::placeholder{
   text-align: center;
@@ -59,18 +62,49 @@ main h3{
   width: 100px;
   height: 30px;
   cursor: pointer;
+  border-radius: 5px;
+}
+#measurement, #name{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 550;
 }
 
 #measurement,#power,#info{
   text-align: center;
-  font-size: medium;
+  font-size: 20px;
   color: var(--primary-color-5);
   font-weight: 550;
 }
 img{
-  width: 100%;
-  margin: 40px;
+  height: 200px;
+  width: 200px;
+  margin: -40px auto;
+  display: none;
 }
+
+#types{
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+span{
+  padding: 5px 10px;
+  background-color: yellowgreen;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+p{
+  line-height: 1.5;
+}
+
 
 /* Tablets Styles */
 @media (max-width: 768px) {
@@ -81,7 +115,7 @@ img{
 
   main {
     width: 90%; 
-    height: auto; /
+    height: auto; 
     padding: 15px;
   }
 
